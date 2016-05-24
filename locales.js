@@ -106,6 +106,32 @@ const locales = {
       `十二月`
     ]
   },
+  /* German (Germany) */
+  'de_de-DE': {
+    days: [
+      `Sonntag`,
+      `Montag`,
+      `Dienstag`,
+      `Mittwoch`,
+      `Donnerstag`,
+      `Freitag`,
+      `Samstag`
+    ],
+    months: [
+      `Januar`,
+      `Februar`,
+      `März`,
+      `April`,
+      `Mai`,
+      `Juni`,
+      `Juli`,
+      `August`,
+      `September`,
+      `Oktober`,
+      `November`,
+      `Dezember`
+    ]
+  },
   'test_test-TEST': {
     days: [
       `Foo`,

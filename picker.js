@@ -127,7 +127,7 @@ class Picker {
   }
 
   // Initiate I/O with given date input.
-  attachTo(input) {
+  attachTo(input, locale) {
     if(
       input === this.input
       && this.isOpen
@@ -136,6 +136,7 @@ class Picker {
     }
 
     this.input = input;
+    this.input.locale = locale;
     this.sync();
     this.goto(this.input);
   }
@@ -172,8 +173,8 @@ class Picker {
     this.locale = this.input.locale;
 
     const daysHeadHTML = [`<tr>`];
-    for(let i = 0, len = this.input.localeText.days.length; i < len; ++i) {
-      daysHeadHTML.push(`<th scope="col">${this.input.localeText.days[i]}</th>`);
+    for(let i = 0, len = this.locale.days.length; i < len; ++i) {
+      daysHeadHTML.push(`<th scope="col">${this.locale.days[i]}</th>`);
     }
     this.daysHead.innerHTML = daysHeadHTML.join(``);
 
@@ -181,7 +182,7 @@ class Picker {
       this.month,
       0,
       11,
-      this.input.localeText.months
+      this.locale.months
     );
   }
 

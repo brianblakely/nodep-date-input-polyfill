@@ -35,6 +35,13 @@ increment/decrement the date by one day.
 
     `<input type="date" lang="en" />`
 
+* **Formatting:** Specify the display format by setting the
+`date-format` attribute of the `input` element.  The default format is `yyyy-mm-dd`.
+[Available options list.](https://github.com/felixge/node-dateformat#mask-options)
+
+    `<input type="date" date-format="mm/dd/yyyy" />`
+
+
 ## Contributing
 
 ### Local Development

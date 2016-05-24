@@ -1,5 +1,6 @@
-import { thePicker } from './picker.js';
+import thePicker from './picker.js';
 import locales from './locales.js';
+import dateFormat from './dateformat.js';
 
 export default class Input {
   constructor(input) {
@@ -10,6 +11,11 @@ export default class Input {
       this.element.getAttribute(`lang`)
       || document.body.getAttribute(`lang`)
       || `en`;
+
+    this.format =
+      this.element.getAttribute(`date-format`)
+      || document.body.getAttribute(`date-format`)
+      || `yyyy-mm-dd`;
 
     this.localeText = this.getLocaleText();
 
@@ -22,11 +28,10 @@ export default class Input {
               return null;
             }
 
-            const val = this.element.value.split(/\D/);
-            return new Date(`${val[0]}-${`0${val[1]}`.slice(-2)}-${`0${val[2]}`.slice(-2)}`);
+            return new Date(Date.parse(this.element.value));
           },
           set: val=> {
-            this.element.value = val.toISOString().slice(0,10);
+            this.element.value = dateFormat(val, this.format);
           }
         },
         'valueAsNumber': {
@@ -35,7 +40,7 @@ export default class Input {
               return NaN;
             }
 
-            return this.element.valueAsDate.getTime();
+            return this.element.valueAsDate.valueOf();
           },
           set: val=> {
             this.element.valueAsDate = new Date(val);
@@ -47,7 +52,7 @@ export default class Input {
     // Open the picker when the input get focus,
     // also on various click events to capture it in all corner cases.
     const showPicker = ()=> {
-      thePicker.attachTo(this.element);
+      thePicker.attachTo(this.element, this.localeText);
     };
     this.element.addEventListener(`focus`, showPicker);
     this.element.addEventListener(`mousedown`, showPicker);
