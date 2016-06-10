@@ -42,15 +42,7 @@ class Picker {
     this.today.textContent = `Today`;
     this.today.addEventListener(`click`, ()=> {
       const today = new Date();
-      this.date = new Date(
-        `${
-          today.getFullYear()
-        }/${
-          `0${today.getMonth()+1}`.slice(-2)
-        }/${
-          `0${today.getDate()}`.slice(-2)
-        }`
-      );
+      this.date = new Date(Date.UTC(today.getFullYear(), today.getMonth(), today.getDate()));
       this.setInput();
     });
     this.container.appendChild(this.today);
@@ -194,7 +186,7 @@ class Picker {
     // as well as on which weekdays they lie.
     const year = this.date.getFullYear(); // Get the year (2016).
     const month = this.date.getMonth(); // Get the month number (0-11).
-    const startDay = new Date(year, month, 1).getDay(); // First weekday of month (0-6).
+    const startDay = (new Date(year, month, 1).getDay() - this.input.localeText.firstDayOfTheWeek) % 7; // First weekday of month (0-6).
     const maxDays = new Date(
       this.date.getFullYear(),
       month + 1,

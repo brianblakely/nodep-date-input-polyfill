@@ -27,6 +27,7 @@ const locales = {
       `November`,
       `December`
     ],
+    firstDayOfTheWeek: 0,
     today: `Today`
   },
   /* Simplified Chinese */
@@ -54,6 +55,7 @@ const locales = {
       `十一月`,
       `十二月`
     ],
+    firstDayOfTheWeek: 0,
     today: `今天`
   },
   /* Simplified Chinese, informal*/
@@ -81,6 +83,7 @@ const locales = {
       `十一月`,
       `十二月`
     ],
+    firstDayOfTheWeek: 0,
     today: `今天`
   },
   /* Traditional Chinese */
@@ -108,6 +111,7 @@ const locales = {
       `十一月`,
       `十二月`
     ],
+    firstDayOfTheWeek: 0,
     today: `今天`
   },
   /* German (Germany) */
@@ -135,6 +139,7 @@ const locales = {
       `November`,
       `Dezember`
     ],
+    firstDayOfTheWeek: 0,
     today: `Heute`
   },
   /* Danish */
@@ -162,6 +167,7 @@ const locales = {
       `November`,
       `December`
     ],
+    firstDayOfTheWeek: 0,
     today: `I dag`
   },
   /* Spanish */
@@ -189,6 +195,7 @@ const locales = {
       `Noviembre`,
       `Diciembre`
     ],
+    firstDayOfTheWeek: 0,
     today: `Hoy`
   },
   /* Hindi */
@@ -216,7 +223,36 @@ const locales = {
       `नवम्बर`,
       `दिसम्बर`
     ],
+    firstDayOfTheWeek: 0,
     today: `आज`
+  },
+  /* Rusian */
+  'ru_ru-RU': {
+    days: [
+      `Пн`, // Monday
+      `Вт`,
+      `Ср`,
+      `Чт`,
+      `Пт`,
+      `Сб`,
+      `Вс` // Saturday
+    ],
+    months: [
+      `Январь`,
+      `Февраль`,
+      `Март`,
+      `Апрель`,
+      `Май`,
+      `Июнь`,
+      `Июль`,
+      `Август`,
+      `Сентябрь`,
+      `Октябрь`,
+      `Ноябрь`,
+      `Декабрь`
+    ],
+    firstDayOfTheWeek: 1,
+    today: `Сегодня`
   }
 };
 
