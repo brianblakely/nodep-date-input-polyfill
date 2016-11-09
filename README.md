@@ -8,7 +8,7 @@ Forked from [html5-simple-date-input-polyfill](https://www.npmjs.com/package/htm
 
 ## Demo
 
-[Try it IE, Firefox, and macOS Safari.](https://brianblakely.github.io/nodep-date-input-polyfill/)
+[Try it in IE, Firefox, and macOS Safari.](https://brianblakely.github.io/nodep-date-input-polyfill/)
 
 ## Install
 
@@ -53,7 +53,7 @@ increment/decrement the date by one day.
 
     The rendered date format will automatically adhere to the given locale.
 
-    Currently supported locales include English, Chinese (Simplified / Simplified Informal / Traditional), Japanese, Spanish, Portuguese, Hindi, German, and Danish.
+    Currently supported locales include English, Chinese (Simplified / Simplified Informal / Traditional), Japanese, Spanish, Portuguese, Hindi, German, Dutch, Danish, and Turkish.
 
 ## Usage Notes
 

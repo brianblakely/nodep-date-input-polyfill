@@ -1,6 +1,6 @@
 {
   "name": "nodep-date-input-polyfill",
-  "version": "4.0.6",
+  "version": "4.2.0",
   "description": "Automatically adds datepickers to input[type=date] on IE, Firefox, and macOS Safari.",
   "main": "nodep-date-input-polyfill.dist.js",
   "scripts": {
