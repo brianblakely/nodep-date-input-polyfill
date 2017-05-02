@@ -155,12 +155,11 @@ export default class Input {
     const notADateValue = `not-a-date`;
     input.setAttribute(`value`, notADateValue);
 
+    let currentScript = document.currentScript || document.querySelector(`script[src*="nodep-date-input-polyfill"]`);
+
     return (
-      (
-        document.currentScript
-        && !document.currentScript.hasAttribute(`data-nodep-date-input-polyfill-debug`)
-      )
-      && !(input.value === notADateValue)
+        !currentScript.hasAttribute(`data-nodep-date-input-polyfill-debug`)
+        && !(input.value === notADateValue)
     );
   }
 
