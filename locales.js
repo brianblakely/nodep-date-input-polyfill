@@ -406,7 +406,35 @@ const locales = {
     ],
     today: `今日`,
     format: `YYYY-MM-dd`
-  }
+  },
+  /* Italian */
+  'it': {
+    days: [
+      `Dom`,
+      `Lun`,
+      `Mar`,
+      `Mer`,
+      `Gio`,
+      `Ven`,
+      `Sab`
+    ],
+    months: [
+      `Gennaio`,
+      `Febbraio`,
+      `Marzo`,
+      `Aprile`,
+      `Maggio`,
+      `Giugno`,
+      `Luglio`,
+      `Agosto`,
+      `Settembre`,
+      `Ottobre`,
+      `Novembre`,
+      `Dicembre`
+    ],
+    today: `Oggi`,
+    format: `dd/MM/YYYY`
+  },  
 };
 
 export default locales;
