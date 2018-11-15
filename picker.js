@@ -12,6 +12,7 @@ class Picker {
     // The picker element. Unique tag name attempts to protect against
     // generic selectors.
     this.container = document.createElement(`date-input-polyfill`);
+    this.container.setAttribute(`aria-hidden`, `true`);
 
     // Add controls.
     // Year picker.
