@@ -3,9 +3,11 @@ import minify from 'rollup-plugin-babel-minify';
 import sass from 'rollup-plugin-sass';
 
 export default {
-  entry: `nodep-date-input-polyfill.js`,
-  dest: `nodep-date-input-polyfill.dist.js`,
-
+  input: `nodep-date-input-polyfill.js`,
+  output: {
+    file: `nodep-date-input-polyfill.dist.js`,
+    format: 'umd'
+  },
   plugins: [
     babel({
       include: `*.js`,
@@ -21,6 +23,4 @@ export default {
       insert: true
     })
   ],
-
-  format: 'umd'
 };
