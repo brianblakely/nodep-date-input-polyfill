@@ -225,6 +225,34 @@ const locales = {
     today: `Hoy`,
     format: `D/M/Y`
   },
+  /* Galician */
+  'gl': {
+    days: [
+      `Dom`,
+      `Lun`,
+      `Mar`,
+      `Mér`,
+      `Xov`,
+      `Ven`,
+      `Sáb`
+    ],
+    months: [
+      `Xaneiro`,
+      `Febreiro`,
+      `Marzo`,
+      `Abril`,
+      `Maio`,
+      `Xuño`,
+      `Xullo`,
+      `Agosto`,
+      `Setembro`,
+      `Outubro`,
+      `Novembro`,
+      `Decembro`
+    ],
+    today: `Hoxe`,
+    format: `D/M/Y`
+  },
   /* Hindi */
   'hi': {
     days: [
