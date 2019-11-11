@@ -197,6 +197,34 @@ const locales = {
     today: `I dag`,
     format: `D/M/Y`
   },
+  /* Swedish */
+  'sv': {
+    days: [
+      `Sön`,
+      `Mån`,
+      `Tis`,
+      `Ons`,
+      `Tors`,
+      `Fre`,
+      `Lör`
+    ],
+    months: [
+      `Januari`,
+      `Februari`,
+      `Mars`,
+      `April`,
+      `Maj`,
+      `Juni`,
+      `Juli`,
+      `Augusti`,
+      `September`,
+      `Oktober`,
+      `November`,
+      `December`
+    ],
+    today: `Idag`,
+    format: `Y/M/D`
+  },
   /* Spanish */
   'es': {
     days: [
